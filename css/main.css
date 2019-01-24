@@ -21,7 +21,21 @@ label.error{
 	border-radius: 3px;
 }
 
+.menu-form{
+	margin: 1em;
+}
+
 .btn-show-menu{
 	background: linear-gradient(120deg,#f7415f,#fe734e);
 	color: #fff;
+}
+
+.show-todays-menu{
+    width: 100%;
+    margin: 0 auto;
+    padding: 1em;
+    font-size: 2em;
+    box-shadow: 0 2px 7px 3px rgba(0,0,0,.05);
+    border: 1px solid #e7e7e7;
+    margin-top: 1em;
 }

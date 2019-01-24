@@ -23,12 +23,13 @@ filterMenu: function(data){
 	var menu = $('.select-menu').val(); //veg/nonveg
 	var prefer = _.where(data, {'type':menu});
 	todaysMenu = prefer[0].menu[Math.floor(Math.random()*10)];
-	$('.show-todays-menu').text('').text(todaysMenu);
+	$('.show-todays-menu').removeClass('hide').text('').text(todaysMenu);
 },
 
 fetchMenu: function(e){
 		var that = this;
 		e.preventDefault();
+		$('.show-todays-menu').addClass('hide');
 		if(!$('.menu-form').valid()) return false;
 		menu.fetch({ 
 		url: "db/menu.json", 

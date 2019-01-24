@@ -2,49 +2,49 @@
 <html>
 <head>
 	<title>Todays Menu</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<div class="container text-center aaj-khane-mai-kya-hai-wrapper">
 	  <div class="row">
-	    <div class="col-sm-offset-3 col-sm-6 aaj-khane-mai-kya-hai-wrapper-inner">
-	      <div class="todays-menu-wrapper">
-	      		<div class="row">
-				<form class="form-group menu-form">
+		<div class="col-sm-offset-3 col-sm-6 aaj-khane-mai-kya-hai-wrapper-inner">
+		  <div class="todays-menu-wrapper">
+				<div class="row">
 					<div class="col-sm-12">
-					<br>
-				  <div class="form-group text-left">
-				    <label for="selectDay">Today is <span class="text-green today color-green"></span></label>
-				  </div>
-				  <div class="form-group text-left">
-				    <label for="selectDay">Select Meal Type</label>
-				    <select name="select-meal" class="form-control select-meal" required="required">
-				    	<option value="">Select Meal</option>
-				    	<option value="BREAKFAST">Breakfast</option>
-				    	<option value="LUNCH">Lunch</option>
-				    	<option value="DINNER">Dinner</option>
-				    </select>
-				  </div>
-				  <div class="form-group text-left">
-				    <label for="selectDay">Select Menu</label>
-				    <select name="select-" class="form-control select-menu" required="required">
-				    	<option value="">Select Menu</option>
-				    	<option value="VEG">Veg</option>
-				    	<option value="NONVEG">Non Veg</option>
-				    </select>
-				  </div>
-				  <button type="submit" class="btn btn-default btn-success btn-show-menu">Show me todays menu</button>
-				  <div class="show-todays-menu"></div>
-				  <br>
-				</div>
-				</form>
+						<form class="form-group menu-form">
+						  <div class="form-group text-left">
+							<label for="selectDay">Today is <span class="text-green today color-green"></span></label>
+						  </div>
+						  <div class="form-group text-left">
+							<label for="selectDay">Select Meal Type</label>
+							<select name="select-meal" class="form-control select-meal" required="required">
+								<option value="">Select Meal</option>
+								<option value="BREAKFAST">Breakfast</option>
+								<option value="LUNCH">Lunch</option>
+								<option value="DINNER">Dinner</option>
+							</select>
+						  </div>
+						  <div class="form-group text-left">
+							<label for="selectDay">Select Menu</label>
+							<select name="select-" class="form-control select-menu" required="required">
+								<option value="">Select Menu</option>
+								<option value="VEG">Veg</option>
+								<option value="NONVEG">Non Veg</option>
+							</select>
+						  </div>
+						  <button type="submit" class="btn btn-default btn-success btn-show-menu">Show me todays menu</button>
+						  <div class="show-todays-menu hide"></div>
+						  </form>
+					</div>
+				
 			</div>
-	      </div>
-	    </div>
+		  </div>
+		</div>
 	  </div>
 	</div>
 	<script src="js/library/moment.min.js"></script>
