@@ -26,13 +26,15 @@ filterMenu: function(data){
 	var prefer = filterMealType[0]['menuType'][menuType];
 
 	todaysMenu = prefer[Math.floor(Math.random()*10)];
-	$('.show-todays-menu').removeClass('hide').text('').text(todaysMenu).toUpperCase();
+	$('.show-todays-menu').removeClass('hide').text('').text(todaysMenu);
+	$('.did-not-like-menu').removeClass('hide');
 },
 
 fetchMenu: function(e){
 		var that = this;
 		e.preventDefault();
 		$('.show-todays-menu').addClass('hide');
+		$('.did-not-like-menu').addClass('hide');
 		if(!$('.menu-form').valid()) return false;
 		menu.fetch({ 
 		url: "db/menu.json", 
