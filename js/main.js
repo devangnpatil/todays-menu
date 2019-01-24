@@ -33,7 +33,6 @@ filterMenu: function(data){
 fetchMenu: function(e){
 		var that = this;
 		e.preventDefault();
-		$('.show-todays-menu').addClass('hide');
 		$('.did-not-like-menu').addClass('hide');
 		if(!$('.menu-form').valid()) return false;
 		menu.fetch({ 
