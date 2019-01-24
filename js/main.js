@@ -30,6 +30,15 @@ filterMenu: function(data){
 	$('.did-not-like-menu').removeClass('hide');
 },
 
+gaTracker: function(){
+	ga('send', {
+	  hitType: 'event',
+	  eventCategory: 'Menu Button Cliked',
+	  eventAction: 'Menu Button',
+	  eventLabel: 'Event Cliked'
+	});
+},
+
 fetchMenu: function(e){
 		var that = this;
 		e.preventDefault();
@@ -39,6 +48,7 @@ fetchMenu: function(e){
 		url: "db/menu.json", 
 		success: function(data) {
 			that.filterMenu(data);
+			that.gaTracker();
 			},
 		error: function(){
 			 console.log('There was some error in loading and processing the JSON file');
