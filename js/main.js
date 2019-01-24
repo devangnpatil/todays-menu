@@ -19,11 +19,14 @@ events: {
 
 filterMenu: function(data){
 	var data = data.toJSON();
-	var meal = $('.select-meal').val(); //lunch/dinner
-	var menu = $('.select-menu').val(); //veg/nonveg
-	var prefer = _.where(data, {'type':menu});
-	todaysMenu = prefer[0].menu[Math.floor(Math.random()*10)];
-	$('.show-todays-menu').removeClass('hide').text('').text(todaysMenu);
+	var mealType = $('.select-meal').val(); //lunch/dinner
+	var menuType = $('.select-menu').val(); //veg/nonveg
+	var filterMealType = _.where(data, {'mealType':mealType});
+
+	var prefer = filterMealType[0]['menuType'][menuType];
+
+	todaysMenu = prefer[Math.floor(Math.random()*10)];
+	$('.show-todays-menu').removeClass('hide').text('').text(todaysMenu).toUpperCase();
 },
 
 fetchMenu: function(e){
