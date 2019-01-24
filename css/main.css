@@ -1,10 +1,13 @@
 body{
-	background: dimgrey;
+	background: linear-gradient(120deg,#f7415f,#fe734e);
 }
-
+label.error{
+	color: red;
+	font-weight: normal;
+}
 .aaj-khane-mai-kya-hai-wrapper{
 	margin-top: 5em;
 }
 .aaj-khane-mai-kya-hai-wrapper-inner{
-	background: lightgrey;
+	background: #fff;
 }

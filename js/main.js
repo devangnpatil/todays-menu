@@ -27,8 +27,9 @@ filterMenu: function(data){
 },
 
 fetchMenu: function(e){
-	var that = this;
-	e.preventDefault();
+		var that = this;
+		e.preventDefault();
+		if(!$('.menu-form').valid()) return false;
 		menu.fetch({ 
 		url: "db/menu.json", 
 		success: function(data) {
@@ -40,10 +41,15 @@ fetchMenu: function(e){
 	});
 },
 
+validateMenuForm: function(){
+	$('.menu-form').validate();
+},
+
 render: function() {
 	var today = moment().format('dddd');
 	$('.today').text(today);
 	this.today = today
+	this.validateMenuForm()
 }
 });
 var appView = new AppView();
