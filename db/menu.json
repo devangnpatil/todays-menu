@@ -1,0 +1,50 @@
+[{
+    "type": "VEG",
+    "menu": [
+        "Dal Rice", 
+        "Veg Fried Rice", 
+        "Dal Khichadi", 
+        "Paneer Pulav",
+        "Paneer Bhurji", 
+        "Paneer Chilli",
+        "Soya Bin",
+        "Mashroom",
+        "Guar",
+        "Fansi Potato",
+        "Palak",
+        "Methi",
+        "Lady Fingure",
+        "Tindora",
+        "Chana and Dal wth Dhodi",
+        "Toor ki Dal",
+        "Mug",
+        "Chana",
+        "Vatana",
+        "Veg Pulav",
+        "Veg Kolhappuri",
+        "Veg Biriyani",
+        "Turyu",
+        "Sev Tamatar",
+        "Pab Bhaji",
+        "Shimal Mirch",
+        "Mac D",
+        "soya Aloo"
+    ]
+},{
+    "type": "NONVEG",
+    "menu": [
+        "Chicken Biriyani",
+        "Egg Palak",
+        "Egg Kaadi",
+        "Egg Bhurji",
+        "Pata nu Khatu",
+        "Bombil nu khatu",
+        "Kata nu khatu",
+        "Egg Fry",
+        "Boil Egg",
+        "egg Tomato",
+        "Egg Fry",
+        "Chickne Rice",
+        "Egg Fried Rice"
+        ]
+}]
