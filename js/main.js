@@ -28,14 +28,15 @@ filterMenu: function(data){
 	todaysMenu = prefer[Math.floor(Math.random()*10)];
 	$('.show-todays-menu').removeClass('hide').text('').text(todaysMenu);
 	$('.did-not-like-menu').removeClass('hide');
+	this.gaTracker(todaysMenu, menuType, mealType);
 },
 
-gaTracker: function(){
+gaTracker: function(todaysMenu, menuType, mealType){
 	ga('send', {
 	  hitType: 'event',
-	  eventCategory: 'Menu Button Cliked',
-	  eventAction: 'Menu Button',
-	  eventLabel: 'Event Cliked'
+	  eventCategory: mealType + " " + menuType,
+	  eventAction: "Liked " + todaysMenu,
+	  eventLabel: 'Preferred menu'
 	});
 },
 
@@ -48,7 +49,6 @@ fetchMenu: function(e){
 		url: "db/menu.json", 
 		success: function(data) {
 			that.filterMenu(data);
-			that.gaTracker();
 			},
 		error: function(){
 			 console.log('There was some error in loading and processing the JSON file');
