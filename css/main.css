@@ -39,3 +39,19 @@ label.error{
     border: 1px solid #e7e7e7;
     margin-top: 1em;
 }
+.copyright{
+	position:  absolute;
+	right: 0;
+	color: white;
+	margin-right: 10px;
+	bottom: 0;
+}
+
+.copyright span{
+	font-weight: bold;
+	color: green;
+}
+
+.copyright a{
+	color: green
+}
